@@ -10,6 +10,7 @@ class Group(models.Model):
     def __str__(self):
         return self.group_name
 
+
 class MyUser(models.Model):
     user_name = models.CharField(max_length=120, unique=True)
     created = models.DateField(default=date.today)
